@@ -1,4 +1,5 @@
 from funcionPDF import *
+from DatosEstaticos import *
 listaNombre = []
 listaEdades = []
 
@@ -7,8 +8,9 @@ def menu():
     while(op!=0):   
         print("1. Pedir datos")
         print("2. Imprimir datos")
-        print("3. Generar PD")
+        print("3. Generar PDF")
         print("4. Generar QR")
+        print("5. Lista de productos")
         print("0. Salir")
         op = int(input("Elige una opcion "))
         if(op == 1):
@@ -16,7 +18,9 @@ def menu():
         elif(op == 2):
             imprimirDatos()
         elif(op==3):
-            generarPDF()
+            generarPDF(listaNombre, listaEdades)
+        elif(op==5):
+            listaProductos()
 
 def pedirDatos():
     listaNombre.append(input("Ingresa un nombre "))
