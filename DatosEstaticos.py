@@ -10,3 +10,8 @@ def listaProductos():
     print("8. Pastes")
     print("9. Agua") 
     print("10. Galletas") 
+
+def Areas():
+    print("1. Darte de alta")
+    print("2.Recaudación")
+
