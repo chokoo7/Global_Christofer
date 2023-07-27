@@ -1,10 +1,16 @@
 from reportlab.pdfgen import canvas
 from funcionQR import *
+import datetime
+import locale
+locale.setlocale(locale.LC_ALL, '')
+
 ruta = "C:/Users/adanz/OneDrive/Escritorio/ModalidadPython/pruebaFunciones/"
-nombreArchivo = ruta + "reporteGlobal.pdf"
+
 nombreQR = ruta + "miQr.png"
 
 def generarPDF(listaNombre, listaEdades):
+    fecha_actual = datetime.datetime.now()
+    nombreArchivo = ruta + "reporteGlobal"+fecha_actual.strftime('%d_%m_%Y_%H_%M_%S')+".pdf"
     generarQR(nombreQR, "Hola desde funcon")
     c = canvas.Canvas(nombreArchivo)
     xInicial = 200

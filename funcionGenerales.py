@@ -6,11 +6,11 @@ listaEdades = []
 def menu():
     op = 1
     while(op!=0):   
-        print("1. Pedir datos")
-        print("2. Imprimir datos")
+        print("1. Solicitar cita")
+        print("2. Empleado")
         print("3. Generar PDF")
         print("4. Generar QR")
-        print("5. Lista de productos")
+        print("5. Conoce nuestras áreas")
         print("0. Salir")
         op = int(input("Elige una opcion "))
         if(op == 1):
@@ -20,7 +20,7 @@ def menu():
         elif(op==3):
             generarPDF(listaNombre, listaEdades)
         elif(op==5):
-            listaProductos()
+            Areas()
 
 def pedirDatos():
     listaNombre.append(input("Ingresa un nombre "))
