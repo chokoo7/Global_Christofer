@@ -11,6 +11,243 @@
 #     print("9. Agua") 
 #     print("10. Galletas") 
 
+nomClientes = ["1. Sofía Gómez Soto", 
+        "2. Alejandro Ramírez Vargas",
+        "3. Valentina Herrera López",
+        "4. Emma García Martínez",
+        "5. Daniel Rodríguez López",
+        "6. Sofía Fernández Sánchez",
+        "7. Alejandro Torres Ramírez",
+        "8. Valentina Gómez Pérez",
+        "9. Mateo Vargas González",
+        "10. Isabella Reyes Jiménez",
+        "11. Lucas Mendoza Morales",
+        "12. Martina Castro Ruiz",
+        "13. Sebastián Herrera Ortega",
+        "14. Valeria Medina Castro",
+        "15. Santiago Lozano Silva",
+        "16. Lucía Peralta Rojas",
+        "17. Nicolás Morales Vega",
+        "18. Amelia Rubio Castro",
+        "19. Matías Delgado Guzmán",
+        "20. Emilia Ortega Paredes",
+        "21. Emiliano Vargas Núñez",
+        "22. Victoria Aguilar Flores",
+        "23. Maximiliano Cordero Ríos",
+        "24. Renata Peña Méndez",
+        "25. Diego Bravo Rivas",
+        "26. Mariana Velasco Cervantes",
+        "27. Thiago Valencia Carrillo",
+        "28. Miranda Ríos Pacheco",
+        "29. Felipe Solís Ibarra",
+        "30. Renata Mora Navarro",
+        "31. Juan Pablo Esparza Franco",
+        "32. Helena Cervantes Cisneros",
+        "33. Pedro Ramírez Delgado",
+        "34. Natalia Ochoa León",
+        "35. Leonardo Cárdenas Rangel",
+        "36. Antonella Vega Vargas",
+        "37. José Luis Huerta Montes",
+        "38. Camila Paredes Delgado",
+        "39. Joaquín Zamora Cordero",
+        "40. Ana Sofía Cisneros Gutiérrez",
+        "41. Francisco Acosta Villegas",
+        "42. Mariana Peña Ríos",
+        "43. Andrés Mendoza Esparza",
+        "44. Catalina Pacheco Solís",
+        "45. Miguel Delgado Ríos",
+        "46. Daniela Montes Huerta",
+        "47. Sebastián Guzmán Vega",
+        "48. Sofía Esparza Cervantes",
+        "49. Emiliano Bravo Montes",
+        "50. Luciana Carrillo Navarro"]
+
+RFC = ["ABCD000101AAA",
+       "XYZW010202BBB",
+       "LMNO020303CCC",
+       "PQRS030404DDD",
+       "UVWX040505EEE",
+       "EFGH050606FFF",
+       "IJKL060707GGG",
+       "MNOP070808HHH",
+       "QRST080909III",
+       "VWXY091010JJJ",
+       "BCDE101111KKK",
+       "ZYXW111212LLL",
+       "ONML121313MMM",
+       "SRQP131414NNN",
+       "WXYZ141515OOO",
+       "EFGH151616PPP",
+       "IJKL161717QQQ",
+       "BCDE171818RRR",
+       "WXYZ181919SSS",
+       "MNOP192020TTT",
+       "ZYXW202121UUU",
+       "ONML212222VVV",
+       "SRQP222323WWW",
+       "UVWX232424XXX",
+       "EFGH242525YYY",
+       "IJKL252626ZZZ",
+       "WXYZ262727AAA",
+       "MNOP272828BBB",
+       "SRQP282929CCC",
+       "BCDE293030DDD",
+       "ZYXW303131EEE",
+       "ONML313232FFF",
+       "SRQP323333GGG",
+       "EFGH333434HHH",
+       "WXYZ343535III",
+       "IJKL353636JJJ",
+       "PQRS363737KKK",
+       "UVWX373838LLL",
+       "MNOP383939MMM",
+       "EFGH394040NNN",
+       "SRQP404141OOO",
+       "BCDE414242PPP",
+       "WXYZ424343QQQ",
+       "IJKL434444RRR",
+       "PQRS444545SSS",
+       "SRQP454646TTT",
+       "BCDE464747UUU",
+       "ZYXW474848VVV",
+       "PQRS484949WWW",
+       "WXYZ495050XXX"]
+
+numCliente = ["CLNT001",
+              "CLNT002",
+              "CLNT003",
+              "CLNT004",
+              "CLNT005",
+              "CLNT006",
+              "CLNT007",
+              "CLNT008",
+              "CLNT009",
+              "CLNT010",
+              "CLNT011",
+              "CLNT012",
+              "CLNT013",
+              "CLNT014",
+              "CLNT015",
+              "CLNT016",
+              "CLNT017",
+              "CLNT018",
+              "CLNT019",
+              "CLNT020",
+              "CLNT021",
+              "CLNT022",
+              "CLNT023",
+              "CLNT024",
+              "CLNT025",
+              "CLNT026",
+              "CLNT027",
+              "CLNT028",
+              "CLNT029",
+              "CLNT030",
+              "CLNT031",
+              "CLNT032",
+              "CLNT033",
+              "CLNT034",
+              "CLNT035",
+              "CLNT036",
+              "CLNT037",
+              "CLNT038",
+              "CLNT039",
+              "CLNT040",
+              "CLNT041",
+              "CLNT042",
+              "CLNT043",
+              "CLNT044",
+              "CLNT045",
+              "CLNT046",
+              "CLNT047",
+              "CLNT048",
+              "CLNT049",
+              "CLNT050"]
+
+nomTrabajadores =["1.Valerya Hernandez Mendoza",
+               "2.Carlos García López",
+               "3.Sofia Martinez Ramirez",
+               "4.Alejandro Torres Medina",
+               "5.Ana Rodriguez Vargas",
+               "6.Laura Gonzalez Castro",
+               "7.Diego Morales Paredes",
+               "8.Isabella Herrera Cruz",
+               "9.Juan Silva Mendoza",
+               "10.Camila Rivera Guzmán",
+               "11.Andrés Ortega Jiménez",
+               "12.Valentina Torres Rosales",
+               "13.Sebastián Martinez Delgado",
+               "14.Lucía Gonzalez Reyes",
+               "15.Pedro Ramírez Bravo",
+               "16.Martina Paredes Castro",
+               "17.Francisco Sánchez Alvarado",
+               "18.Gabriela Morales Huerta",
+               "19.José Hernández Rosas",
+               "20.Natalia López Gómez",
+               "21.Aurora Gómez Montes",
+               "22.Mateo Hernández Velázquez",
+               "23.Sol Martínez Flores",
+               "24.Gabriel Nuñez Alvarado",
+               "25.Victoria Espinoza Ruiz",
+               "26.Lucas Méndez Torres",
+               "27.Alejandro Sánchez Bravo",
+               "28.Isabela Ortiz Méndez",
+               "29.Leonardo Fernández Núñez",
+               "30.Camila Ríos Paredes"]
+
+numTrabajadores = ["TRAB001",
+               "TRAB002",
+               "TRAB003",
+               "TRAB004",
+               "TRAB005",
+               "TRAB006",
+               "TRAB007",
+               "TRAB008",
+               "TRAB009",
+               "TRAB010",
+               "TRAB011",
+               "TRAB012",
+               "TRAB013",
+               "TRAB014",
+               "TRAB015",
+               "TRAB016",
+               "TRAB017",
+               "TRAB018",
+               "TRAB019",
+               "TRAB020",
+               "TRAB021",
+               "TRAB022",
+               "TRAB023",
+               "TRAB024",
+               "TRAB025",
+               "TRAB026",
+               "TRAB027",
+               "TRAB028",
+               "TRAB029",
+               "TRAB030",
+               "TRAB031",
+               "TRAB032",
+               "TRAB033",
+               "TRAB034",
+               "TRAB035",
+               "TRAB036",
+               "TRAB037",
+               "TRAB038",
+               "TRAB039",
+               "TRAB040",
+               "TRAB041",
+               "TRAB042",
+               "TRAB043",
+               "TRAB044",
+               "TRAB045",
+               "TRAB046",
+               "TRAB047",
+               "TRAB048",
+               "TRAB049",
+               "TRAB050"
+]
+
+
 def Areas():
     print("1. Atencion al comrpibuyente")
     print("2. Recaudación")
@@ -19,37 +256,10 @@ def Areas():
 
 
 def Trabajadores():
-    print("1.Valerya Hernandez Mendoza")
-    print("2.Carlos García López")
-    print("3.Sofia Martinez Ramirez")
-    print("4.Alejandro Torres Medina")
-    print("5.Ana Rodriguez Vargas")
-    print("6.Laura Gonzalez Castro")
-    print("7.Diego Morales Paredes")
-    print("8.Isabella Herrera Cruz")
-    print("9.Juan Silva Mendoza")
-    print("10.Camila Rivera Guzmán")
-    print("11.Andrés Ortega Jiménez")
-    print("12.Valentina Torres Rosales")
-    print("13.Sebastián Martinez Delgado")
-    print("14.Lucía Gonzalez Reyes")
-    print("15.Pedro Ramírez Bravo")
-    print("16.Martina Paredes Castro")
-    print("17.Francisco Sánchez Alvarado")
-    print("18.Gabriela Morales Huerta")
-    print("19.José Hernández Rosas")
-    print("20.Natalia López Gómez")
-    print("21.Aurora Gómez Montes")
-    print("22.Mateo Hernández Velázquez")
-    print("23.Sol Martínez Flores")
-    print("24.Gabriel Nuñez Alvarado")
-    print("25.Victoria Espinoza Ruiz")
-    print("26.Lucas Méndez Torres")
-    print("27.Alejandro Sánchez Bravo")
-    print("28.Isabela Ortiz Méndez")
-    print("29.Leonardo Fernández Núñez")
-    print("30.Camila Ríos Paredes")
+    for i in range(len(nomTrabajadores)):
+        print("Nombre: ",nomTrabajadores[i], "con numero de trabajador : ",numTrabajadores[i])
 
-    
-def Cita():
-    print("Cuentas con cita?")
+
+def Clientes():
+    for i in range(len(nomClientes)):
+        print("Nombre: ",nomClientes[i],  "   RFC: ", RFC[i])
