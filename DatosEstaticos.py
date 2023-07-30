@@ -11,6 +11,8 @@
 #     print("9. Agua") 
 #     print("10. Galletas") 
 
+#---------CLIENTE--------
+
 nomClientes = ["1. Sofía Gómez Soto", 
         "2. Alejandro Ramírez Vargas",
         "3. Valentina Herrera López",
@@ -164,36 +166,89 @@ numCliente = ["CLNT001",
               "CLNT049",
               "CLNT050"]
 
-nomTrabajadores =["1.Valerya Hernandez Mendoza",
-               "2.Carlos García López",
-               "3.Sofia Martinez Ramirez",
-               "4.Alejandro Torres Medina",
-               "5.Ana Rodriguez Vargas",
-               "6.Laura Gonzalez Castro",
-               "7.Diego Morales Paredes",
-               "8.Isabella Herrera Cruz",
-               "9.Juan Silva Mendoza",
-               "10.Camila Rivera Guzmán",
-               "11.Andrés Ortega Jiménez",
-               "12.Valentina Torres Rosales",
-               "13.Sebastián Martinez Delgado",
-               "14.Lucía Gonzalez Reyes",
-               "15.Pedro Ramírez Bravo",
-               "16.Martina Paredes Castro",
-               "17.Francisco Sánchez Alvarado",
-               "18.Gabriela Morales Huerta",
-               "19.José Hernández Rosas",
-               "20.Natalia López Gómez",
-               "21.Aurora Gómez Montes",
-               "22.Mateo Hernández Velázquez",
-               "23.Sol Martínez Flores",
-               "24.Gabriel Nuñez Alvarado",
-               "25.Victoria Espinoza Ruiz",
-               "26.Lucas Méndez Torres",
-               "27.Alejandro Sánchez Bravo",
-               "28.Isabela Ortiz Méndez",
-               "29.Leonardo Fernández Núñez",
-               "30.Camila Ríos Paredes"]
+numTelCliente = ["5551234567",
+          "5559876543",
+          "5552468135",
+          "5555792468",
+          "5554680135",
+          "5558024571",
+          "5553698524",
+          "5557142098",
+          "5555369784",
+          "5552947810",
+          "5556274859",
+          "5553908642",
+          "5557182036",
+          "5554827509",
+          "5559362718",
+          "5557018299",
+          "5556384920",
+          "5553978461",
+          "5558201634",
+          "5554592073",
+          "5553167948",
+          "5552489735",
+          "5558672304",
+          "5551436098",
+          "5558917263",
+          "5553725109",
+          "5556951423",
+          "5552139704",
+          "5557485261",
+          "5554321390",
+          "5553768691",
+          "5556292733",
+          "5551837264",
+          "5559504958",
+          "5552246756",
+          "5556489234",
+          "5554893748",
+          "5551729405",
+          "5557610382",
+          "5558193470",
+          "5557384912",
+          "5555402137",
+          "5559983720",
+          "5557406381",
+          "5551327056",
+          "5552937481",
+          "5555608345",
+          "5554769418",
+          "5552501724",
+          "5556592487"]
+
+#---------TRABAJADOR---------
+
+nomTrabajadores =["Valerya Hernandez Mendoza",
+               "Carlos García López",
+               "Sofia Martinez Ramirez",
+               "Alejandro Torres Medina",
+               "Ana Rodriguez Vargas",
+               "Laura Gonzalez Castro",
+               "Diego Morales Paredes",
+               "Isabella Herrera Cruz",
+               "Juan Silva Mendoza",
+               "Camila Rivera Guzmán",
+               "Andrés Ortega Jiménez",
+               "Valentina Torres Rosales",
+               "Sebastián Martinez Delgado",
+               "Lucía Gonzalez Reyes",
+               "Pedro Ramírez Bravo",
+               "Martina Paredes Castro",
+               "Francisco Sánchez Alvarado",
+               "Gabriela Morales Huerta",
+               "José Hernández Rosas",
+               "Natalia López Gómez",
+               "Aurora Gómez Montes",
+               "Mateo Hernández Velázquez",
+               "Sol Martínez Flores",
+               "Gabriel Nuñez Alvarado",
+               "Victoria Espinoza Ruiz",
+               "Lucas Méndez Torres",
+               "Alejandro Sánchez Bravo",
+               "Isabela Ortiz Méndez",
+               "Leonardo Fernández Núñez",
+               "Camila Ríos Paredes"]
 
 numTrabajadores = ["TRAB001",
                "TRAB002",
@@ -248,11 +303,15 @@ numTrabajadores = ["TRAB001",
 ]
 
 
-def Areas():
-    print("1. Atencion al comrpibuyente")
-    print("2. Recaudación")
-    #print("Audiotria")
-    #print("SRYS")
+area = ["Tramite del RFC", "Declaración"]
+
+# def Areas():
+#     print("1. Trámites del RFC")
+#     print("2. Declaración")
+#     print("1. Atencio")
+#     print("2. Recaudación")
+#     print("Audiotria")
+#     print("SRYS")
 
 
 def Trabajadores():
