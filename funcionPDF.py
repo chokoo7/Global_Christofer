@@ -15,15 +15,21 @@ def generarPDF(listaNombre, listaEdades):
     c = canvas.Canvas(nombreArchivo)
     xInicial = 200
     yInicial = 700
-    c.setFont("Helvetica", 20)
+    
+    c.setFont("Helvetica-Bold", 20)
+    c.drawString(xInicial - 50 ,yInicial + 90,"Cédula de Identificación Fiscal")
+
+    c.setFont("Helvetica", 10)
     c.drawString(xInicial,yInicial,"Edad")
     c.drawString(xInicial + 120 ,yInicial,"Nombre")
     c.drawImage(nombreQR,200,400,100,100)
+    
+
     for i in range(len(listaNombre)):
+        
         c.setFont("Helvetica", 18)
         yInicial = yInicial - 20
         c.drawString(xInicial,yInicial,listaEdades[i])
         c.drawString(xInicial + 120 ,yInicial,listaNombre[i])
-       
     c.save()
     print("Reporte generado----------------")
