@@ -100,7 +100,7 @@ def menuRFC():
                 print("NO HAT DATOS")
             else:
                 generarPDF(listaNombre, listaEdades)
-                print("--------------------------------")
+                #print("--------------------------------")
 
 
 # def menuPrincipal(): 
