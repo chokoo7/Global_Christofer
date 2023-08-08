@@ -119,6 +119,7 @@ def menuRFC():
 def pedirDatos():
     
     print("Hola buenas tardes")
+    aleatorio = random.choice(nomTrabajadores)
     print("Mi nombre es ",aleatorio," te voy a ayudar a generar tú RFC")
     print("Empezemos con tu tratime de RCF")
     listaNombre.append(input("Ingresa tu nombre completo (empezando con apellidos) : "))
