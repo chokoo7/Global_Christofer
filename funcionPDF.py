@@ -50,12 +50,12 @@ def generarPDF(listaNombre, listaEdades):
     c.setFont("Helvetica", 12)
     c.drawString(xInicial+150, yInicial-70,"Registro Federal de Contribuyentes")
 
-    c.setFont("Helvetica-Bold", 15)
+    c.setFont("Helvetica-Bold", 13)
     #c.drawString(xInicial+150,yInicial-160,"Edad")
     c.drawString(xInicial+150,yInicial-140,"NOMBRE CONTRIBUYENTE")
     c.drawImage(nombreQR,xInicial - 150 ,yInicial-270,270,230)
 
-    c.setFont("Helvetica", 10)
+    c.setFont("Helvetica-Bold", 13)
     c.drawString(xInicial+150,yInicial-220,"DENOMINACION O RAZON SOCIAL")
 
 
@@ -65,12 +65,13 @@ def generarPDF(listaNombre, listaEdades):
         #yInicial = yInicial - 160
         #c.drawString(xInicial,yInicial,listaEdades[i])
         c.drawString(xInicial + 160 ,yInicial-160,listaNombre[i])
+        c.drawString(xInicial+160, yInicial-240,"odaaaaa")
     c.showPage()
     c.save()
     print("Reporte generado------------------")
 
 
-def generarComprobante(numC, nomClientes):
+def generarComprobante(numC, nomClientes,motivo,RFC):
     fecha_actual = datetime.datetime.now()
     nombreArchivo = ruta + "reporte_"+nomClientes[numC]+fecha_actual.strftime('%d_%m_%Y_%H_%M_%S')+".pdf"
     generarQR(nombreQR, "La solicitud fue todo un exito empezaremos con el tramite lo antes posible")
@@ -97,27 +98,29 @@ def generarComprobante(numC, nomClientes):
     c.drawString(xInicial - 30 ,yInicial + 60,"Cédula de Identificación Fiscal")
     
     c.setFillColorRGB(0,0,0)
-    c.setFont("Helvetica-Bold", 20)
-    c.drawString(xInicial+150, yInicial-50,"RFC CONTRIBUYENTE 000")
+    c.setFont("Helvetica-Bold", 13)
+    c.drawString(xInicial+140, yInicial-50,"RFC CONTRIBUYENTE "+RFC[numC])
 
     c.setFont("Helvetica", 12)
     c.drawString(xInicial+150, yInicial-70,"Registro Federal de Contribuyentes")
 
-    c.setFont("Helvetica-Bold", 15)
+    c.setFont("Helvetica-Bold", 13)
     #c.drawString(xInicial+150,yInicial-160,"Edad")
     c.drawString(xInicial+150,yInicial-140,"NOMBRE CONTRIBUYENTE")
     c.drawImage(nombreQR,xInicial - 150 ,yInicial-270,270,230)
 
-    c.setFont("Helvetica", 10)
+    c.setFont("Helvetica-Bold", 13)
     c.drawString(xInicial+150,yInicial-220,"DENOMINACION O RAZON SOCIAL")
 
 
     
-    nombre = nomClientes[numC]
-    print(f"Nombre es {nombre}")
+    #nombre = nomClientes[numC]
+    #print(f"Nombre es {nombre}")
     c.setFont("Helvetica", 9)
         #yInicial = yInicial - 160
         #c.drawString(xInicial,yInicial,listaEdades[i])
     c.drawString(xInicial + 160 ,yInicial-160,nomClientes[numC])
+    c.drawString(xInicial+160, yInicial-240,motivo)
     c.save()
     print("Reporte generado------------------")
+

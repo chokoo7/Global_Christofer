@@ -1,15 +1,3 @@
-# def listaProductos():
-#     print("Lista de productos")
-#     print("1. Coca cola")
-#     print("2. Cheetos")
-#     print("3. Regresco")
-#     print("4. Maruchan")
-#     print("5. Palomitas")
-#     print("6. Helado")
-#     print("7. Mazapan")
-#     print("8. Pastes")
-#     print("9. Agua") 
-#     print("10. Galletas") 
 
 #---------CLIENTE--------
 
@@ -217,6 +205,57 @@ numTelCliente = ["5551234567",
           "5552501724",
           "5556592487"]
 
+CURP =[ "XAXX010101ABCD1234",
+       "LPET679354EFGH5678",
+       "KJCR491064IJKL9012",
+       "QYDH889965MNOP3456",
+       "RYEX452610QRST7890",
+       "ZBXW987654ABCD1234",
+       "QWED563489EFGH5678",
+       "JKLT126780IJKL9012",
+       "MNOP987654MNOP3456",
+       "VBNM450398QRST7890",
+       "PLMH789012ABCD3456",
+       "QAZX234567EFGH6789",
+       "WSXC456789IJKL9012",
+       "EDCV678901MNOP2345",
+       "RFVB123456QRST5678",
+       "TYUI567890ABCD1234",
+       "GHJK678901EFGH5678",
+       "ZXCV789012IJKL9012",
+       "BNMA123456MNOP3456",
+       "QWER234567QRST7890",
+       "ASDF789012ABCD3456",
+       "ZXCV567890EFGH6789",
+       "QWERT9012IJKL90121",
+       "UIOP123456MNOP2345",
+       "HJKL234567QRST5678",
+       "TYUI890123ABCD4567",
+       "PLMK567890EFGH6789",
+       "NHJK123456IJKL9012",
+       "YUIO678901MNOP2345",
+       "QWEM234567QRST5678",
+       "ASDF234567ABCD1234",
+       "ZXCV890123EFGH5678",
+       "QWERT456789IJKL901",
+       "UIOP678901MNOP3456",
+       "HJKL123456QRST7890",
+       "PLMK234567ABCD8901",
+       "QWEM890123EFGH2345",
+       "YUIO456789IJKL5678",
+       "NHJK678901MNOP9012",
+       "TYUI123456QRST6789",
+       "RFVB234567ABCD9012",
+       "PLMK890123EFGH5678",
+       "NHJK456789IJKL2345",
+       "YUIO678901MNOP5678",
+       "ZXCV123456QRST3456",
+       "ASDF890123ABCD5678",
+       "TYUI456789EFGH1234",
+       "PLMK567890IJKL9012",
+       "NHJK678901MNOP2345",
+       "QWEM234567QRST6789"]
+
 #---------TRABAJADOR---------
 
 nomTrabajadores =["Valerya Hernandez Mendoza",
@@ -304,14 +343,6 @@ numTrabajadores = ["TRAB001",
 
 
 area = ["Sacar RFC", "Actualizar RFC"]
-
-# def Areas():
-#     print("1. Trámites del RFC")
-#     print("2. Declaración")
-#     print("1. Atencio")
-#     print("2. Recaudación")
-#     print("Audiotria")
-#     print("SRYS")
 
 
 def Trabajadores():

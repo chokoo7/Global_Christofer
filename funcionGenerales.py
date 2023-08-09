@@ -30,13 +30,15 @@ def menu():
             print("--------------------------------")
         elif(op == 2):
             numC = int(input("Ingresa tus 2 ultimos digitos del folio: "))
-            print(f"Eres {nomClientes[numC-1]}  RFC es {RFC[numC-1]}     Telefono: {numTelCliente[numC-1]}")
+            aleatorioArea= random.choice(nomTrabajadores)
+            areaAlet = random.choice(area)
+            print(f"Eres {nomClientes[numC-1]}  RFC: {RFC[numC-1]}   CURP: {CURP[numC-1]}  Telefono: {numTelCliente[numC-1]}  Motivo: {areaAlet}")
             #Preguntar si quieres generar el comprobante
             op3 = int(input("Deseas comprobante 1.Si 2.No : "))
             if(op3==1):
-                print(f"numC vale {numC}")
-                generarComprobante(numC, nomClientes)
-            print("--------------------------------")
+                #print(f"numC vale {numC}")
+                generarComprobante(numC-1, nomClientes,areaAlet,RFC)
+            #print("--------------------------------")
         elif(op==3):
             #impimirTrabajadores()
             aleatorio = random.choice(nomTrabajadores)
@@ -50,32 +52,6 @@ def menu():
         # elif(op==6):
         #     generarPDF(listaNombre, listaEdades)
         #     print("--------------------------------")
-
-
-def menuSecundario():
-    print("MENU SECUNDARIO")
-    op = 1
-    while( op!=3):
-        print("Selecciona el motivo de la cita ")
-        #print("1. Atencion al compribuyente")
-        print("1. Trámites del RFC")
-        print("2. Declaración")
-        print("3. Generar PDF")
-        print("4. Volver")
-        print("-----------------------")
-        op = int(input("Elige una opcion: "))
-        if(op == 1):
-            menuRFC()
-        elif(op == 2): 
-            print("Bienvendio al área Declaración")
-            print("-----------------------")
-        elif(op == 3):
-            generarPDF(listaNombre, listaEdades)
-            print("--------------------------------")
-            
-        elif(op == 4):
-            menu()
-            #pass
 
 
 def menuRFC(): 
@@ -152,8 +128,7 @@ def pedirActualizacionRFC():
 def imprimirDatos():
     print("Tus datos son: ")
     for i in range(len(listaNombre)):
-        print(f"Nombre: {listaNombre[i]} Edad: {listaEdades[i]}  CURP: {listaCURP[i]}   Telefono: {ListaTel[i]}")
-    print("Tu RFC es: ")
+        print(f"Nombre: {listaNombre[i]}   Edad: {listaEdades[i]}     CURP: {listaCURP[i]}      RFC: {RFC[i]}    Telefono: {ListaTel[i]}")
    
 
 
