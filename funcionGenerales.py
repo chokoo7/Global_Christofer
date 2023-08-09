@@ -6,8 +6,8 @@ listaEdades = []
 listaRFC = []
 listaCURP= []
 ListaTel = []
-aleatorio = random.choice(nomTrabajadores)
-areaAlet = random.choice(area)
+
+
 
 
 
@@ -15,7 +15,7 @@ def menu():
     print("MENU PRIMARIO")
     op = 1
     while(op!=0):   
-        print("Bienvenido al SAT, escoje una de las opciones")
+        print("Bienvenido al SAT, escoge una de las opciones")
         print("1. Solicitar cita")
         print("2. Cuenta con cita")
         print("3. Soy empleado")
@@ -31,9 +31,16 @@ def menu():
         elif(op == 2):
             numC = int(input("Ingresa tus 2 ultimos digitos del folio: "))
             print(f"Eres {nomClientes[numC-1]}  RFC es {RFC[numC-1]}     Telefono: {numTelCliente[numC-1]}")
+            #Preguntar si quieres generar el comprobante
+            op3 = int(input("Deseas comprobante 1.Si 2.No : "))
+            if(op3==1):
+                print(f"numC vale {numC}")
+                generarComprobante(numC, nomClientes)
             print("--------------------------------")
         elif(op==3):
             #impimirTrabajadores()
+            aleatorio = random.choice(nomTrabajadores)
+            areaAlet = random.choice(area)
             numT = int(input("Cual es tu numero de trabajador? 2 digitos:  "))
             print(f"Eres {nomTrabajadores[numT-1]} y tu numero de trabajador : {numTrabajadores[numT-1]}   Area: [{areaAlet}]")
         #     print("--------------------------------")
@@ -132,6 +139,7 @@ def pedirDatos():
     
 def pedirActualizacionRFC():
     print("Bienvendio")
+    aleatorio = random.choice(nomTrabajadores)
     print("Mi nombre es ",aleatorio," te voy a ayudar a actualizar tú RFC")
     listaNombre.append(input("Ingresa tu nombre completo (empezando con apellidos) : "))
     listaEdades.append(input("Ingresa tu edad actualmente:  "))
@@ -155,6 +163,7 @@ def imprimirDatos():
 
 def Declaracion():
     print("Bienvendio")
+    aleatorio = random.choice(nomTrabajadores)
     print("Mi nombre es ",aleatorio," te voy a ayudar a actualizar tú Declaración")
 
 def imprimirActualizacionRFC():
