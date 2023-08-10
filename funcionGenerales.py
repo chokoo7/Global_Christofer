@@ -10,7 +10,6 @@ ListaTel = []
 
 
 
-
 def menu():
     print("MENU PRIMARIO")
     op = 1
@@ -58,6 +57,7 @@ def menuRFC():
      
      op2 = 1
      while( op2!=5):
+
         print("Bienvenido al traime de citas")
         print("1. Sacar RFC")
         print("2. Actualizar RFC")
@@ -68,21 +68,26 @@ def menuRFC():
         print("-----------------------")
 
         if(op2 == 1):
+           
             pedirDatos()
             print("-------------------------")
+            
 
         elif(op2 == 2):
             pedirActualizacionRFC()
+           
             print("-----------------------------------")
         elif(op2== 3):
            imprimirDatos()
            print("---------------------------")
 
         elif(op2==4):
-            if(listaNombre == 0):
+           
+           generarPDF(listaNombre, listaEdades)
+           ''' if(listaNombre == 0):
                 print("NO HAT DATOS")
             else:
-                generarPDF(listaNombre, listaEdades)
+                generarPDF(listaNombre, listaEdades,RFC)'''
                 #print("--------------------------------")
 
 
@@ -100,9 +105,10 @@ def menuRFC():
 
 
 def pedirDatos():
-    
+   
     print("Hola buenas tardes")
     aleatorio = random.choice(nomTrabajadores)
+    areaAlet2= random.choice(area)
     print("Mi nombre es ",aleatorio," te voy a ayudar a generar tú RFC")
     print("Empezemos con tu tratime de RCF")
     listaNombre.append(input("Ingresa tu nombre completo (empezando con apellidos) : "))
@@ -114,8 +120,11 @@ def pedirDatos():
     #imprimirDatos()
     
 def pedirActualizacionRFC():
+    
+    contador=+1
     print("Bienvendio")
     aleatorio = random.choice(nomTrabajadores)
+    aleatorioRFC = random.choice(RFC)
     print("Mi nombre es ",aleatorio," te voy a ayudar a actualizar tú RFC")
     listaNombre.append(input("Ingresa tu nombre completo (empezando con apellidos) : "))
     listaEdades.append(input("Ingresa tu edad actualmente:  "))
@@ -123,7 +132,7 @@ def pedirActualizacionRFC():
     ListaTel.append(input("Ingresa un numero telefonico(10 digitos): "))
     listaRFC.append(input("Ingresa tu RFC: "))
     print("Cambio exitoso ")
-    print("Tu nuevo RFC es: ")
+    print("Tu nuevo RFC es: "+ aleatorioRFC)
 
 def imprimirDatos():
     print("Tus datos son: ")
