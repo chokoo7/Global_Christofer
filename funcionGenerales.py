@@ -22,12 +22,12 @@ def menu():
         print("----------------")
         op = int(input("Elige una opcion "))
         if(op == 1):
-            #menuSecundario()
+            
             menuRFC()
-            #pedirDatos()
-           # imprimirClientes()
             print("--------------------------------")
+
         elif(op == 2):
+
             numC = int(input("Ingresa tus 2 ultimos digitos del folio: "))
             aleatorioArea= random.choice(nomTrabajadores)
             areaAlet = random.choice(area)
@@ -37,21 +37,16 @@ def menu():
             if(op3==1):
                 #print(f"numC vale {numC}")
                 generarComprobante(numC-1, nomClientes,areaAlet,RFC)
-            #print("--------------------------------")
+            print("--------------------------------")
+
         elif(op==3):
-            #impimirTrabajadores()
+           
             aleatorio = random.choice(nomTrabajadores)
             areaAlet = random.choice(area)
             numT = int(input("Cual es tu numero de trabajador? 2 digitos:  "))
             print(f"Eres {nomTrabajadores[numT-1]} y tu numero de trabajador : {numTrabajadores[numT-1]}   Area: [{areaAlet}]")
-        #     print("--------------------------------")
-        # elif(op==4):
-        #     imprimirDatos()
-        #     print("--------------------------------")
-        # elif(op==6):
-        #     generarPDF(listaNombre, listaEdades)
-        #     print("--------------------------------")
-
+            print("--------------------------------")
+    
 
 def menuRFC(): 
      
@@ -74,21 +69,19 @@ def menuRFC():
             
 
         elif(op2 == 2):
+
             pedirActualizacionRFC()
-           
             print("-----------------------------------")
+
         elif(op2== 3):
+           
            imprimirDatos()
            print("---------------------------")
 
         elif(op2==4):
            
            generarPDF(listaNombre, listaEdades)
-           ''' if(listaNombre == 0):
-                print("NO HAT DATOS")
-            else:
-                generarPDF(listaNombre, listaEdades,RFC)'''
-                #print("--------------------------------")
+           
 
 
 # def menuPrincipal(): 
@@ -117,8 +110,7 @@ def pedirDatos():
 
     ListaTel.append(input("Ingresa un numero telefonico(10 digitos): "))
     print("Se aguardaron correctamente :)")
-    #imprimirDatos()
-    
+      
 def pedirActualizacionRFC():
     
     contador=+1
@@ -139,25 +131,3 @@ def imprimirDatos():
     for i in range(len(listaNombre)):
         print(f"Nombre: {listaNombre[i]}   Edad: {listaEdades[i]}     CURP: {listaCURP[i]}      RFC: {RFC[i]}    Telefono: {ListaTel[i]}")
    
-
-
-
-
-
-
-def Declaracion():
-    print("Bienvendio")
-    aleatorio = random.choice(nomTrabajadores)
-    print("Mi nombre es ",aleatorio," te voy a ayudar a actualizar tú Declaración")
-
-def imprimirActualizacionRFC():
-    print("Los nuevos datos son: ")
-
-
-def impimirTrabajadores():
-    Trabajadores()
-
-def imprimirClientes():
-    Clientes()
-
-
